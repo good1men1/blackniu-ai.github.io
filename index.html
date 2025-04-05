@@ -2,74 +2,103 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8" />
-  <title>黑妞智慧官網 | 官方展示網站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>黑妞智慧官網</title>
   <style>
     body {
+      font-family: 'Helvetica Neue', sans-serif;
       margin: 0;
-      font-family: "Helvetica Neue", sans-serif;
-      background-color: #f9fbfd;
+      background: #f5f6f7;
       color: #333;
     }
 
     header {
       background-color: #007aff;
-      padding: 1rem 2rem;
       color: white;
+      padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 1rem;
+      margin-left: 1.5rem;
       font-weight: bold;
     }
 
-    .main {
+    .hero {
       text-align: center;
-      padding: 4rem 1rem;
+      padding: 4rem 1rem 2rem;
     }
 
-    .main h2 {
+    .hero h1 {
       font-size: 2rem;
       color: #007aff;
+      margin-bottom: 1rem;
     }
 
-    .main p {
-      font-size: 1.2rem;
-      color: #444;
-      margin: 1rem 0 2rem;
+    .hero p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 2rem;
     }
 
     .store-link {
       display: inline-block;
+      padding: 0.8rem 1.5rem;
       background-color: #007aff;
       color: white;
-      padding: 1rem 2rem;
-      border-radius: 8px;
       text-decoration: none;
+      border-radius: 8px;
       font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .features, .contact {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .features h2, .contact h2 {
+      font-size: 1.5rem;
+      color: #007aff;
+      margin-bottom: 1rem;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .contact p {
+      font-size: 1rem;
+      color: #555;
     }
 
     footer {
-      margin-top: 3rem;
       text-align: center;
-      font-size: 0.8rem;
-      color: #888;
+      font-size: 0.9rem;
+      color: #999;
+      margin: 2rem 0 1rem;
     }
   </style>
 </head>
-<body>
 
+<body>
   <header>
-    <h1>黑妞智慧官網</h1>
+    <div>黑妞智慧官網</div>
     <nav>
       <a href="#">首頁</a>
       <a href="#">關於我們</a>
@@ -78,20 +107,34 @@
     </nav>
   </header>
 
-  <div class="main">
-    <h2>物件管理好幫手</h2>
-    <p>專為倉儲與物件管理設計的 iOS App</p>
+  <section class="hero">
+    <h1>物件管理好幫手</h1>
+    <p>專為倉儲與物件管理設計的 iOS App。</p>
     <a class="store-link" href="https://apps.apple.com/" target="_blank">前往 App Store</a>
-  </div>
-  </body><section style="background-color: #f0f8ff; padding: 40px 20px;">
-  <h2 style="text-align: center; color: #333;">App 特色功能</h2>
-  <ul style="max-width: 800px; margin: 0 auto; list-style: none; padding: 0;">
-    <li style="padding: 10px 0; font-size: 18px;">🔹 專案建構：可建立多個倉儲分類，快速組織資料</li>
-    <li style="padding: 10px 0; font-size: 18px;">🔹 物件建構：每個專案中可新增多筆物件資料</li>
-    <li style="padding: 10px 0; font-size: 18px;">🔹 圖片縮圖建立：支援圖片上傳並自動生成縮圖</li>
-    <li style="padding: 10px 0; font-size: 18px;">🔹 詳細資料卡：每項物件皆可查看完整備註與資訊</li>
-    <li style="padding: 10px 0; font-size: 18px; color: gray;">✨ 更多功能即將推出，敬請期待升級！</li>
-  </ul>
-</section>
-  <footer>© 2025 黑妞智慧品牌</footer>
+  </section>
+
+  <section class="features">
+    <h2>App 特色功能</h2>
+    <ul>
+      <li>📁 專案建構：可自訂專案名稱與分類</li>
+      <li>📦 物件建構：輸入物件名稱、數量、位置與備註</li>
+      <li>🖼️ 圖片縮圖建立：每個物件皆可上傳圖片並自動建立縮圖</li>
+      <li>📇 詳細資料卡：直覺化 UI 顯示完整資訊</li>
+      <li>🕓 建立與修改時間記錄：方便追蹤物件歷程</li>
+      <li>🧾 多裝置登入支援：iPhone / iPad 通用</li>
+      <li>☁️ 雲端同步：資料儲存在 Firebase，隨時存取</li>
+      <li>🔐 安全機制：帳號密碼登入與刪除帳號功能</li>
+      <li>🔧 預留功能擴充：未來將支援 AI 分類、PDF 匯出、iCloud 備份等</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>聯絡我們</h2>
+    <p>歡迎來信指教與合作：<a href="mailto:good1men1@gmail.com">good1men1@gmail.com</a></p>
+  </section>
+
+  <footer>
+    © 2025 黑妞智慧品牌
+  </footer>
+</body>
 </html>
