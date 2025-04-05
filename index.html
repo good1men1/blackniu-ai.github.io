@@ -1,151 +1,149 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>黑妞智慧官網品牌</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>黑妞智慧官網</title>
   <style>
     body {
       margin: 0;
-      font-family: "Helvetica Neue", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
       background-color: #ffffff;
-      color: #222;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      color: #000000;
     }
-
     header {
-      width: 100%;
-      padding: 1.2rem 2rem;
-      background-color: #007aff;
-      color: white;
-      font-size: 1.6rem;
-      font-weight: bold;
-      text-align: left;
+      background-color: #f5f5f7;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #e0e0e0;
     }
-
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
     nav {
-      width: 100%;
-      background-color: #007aff;
-      display: flex;
-      justify-content: flex-end;
-      padding: 0.5rem 2rem;
-      gap: 1.2rem;
+      margin-top: 10px;
     }
-
     nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 4rem 2rem 2rem;
-    }
-
-    .hero h1 {
-      font-size: 2rem;
+      margin: 0 15px;
       color: #007aff;
+      text-decoration: none;
+      font-weight: 500;
     }
-
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #fefefe;
+    }
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
     .hero p {
-      font-size: 1.1rem;
-      color: #333;
-      margin-top: 0.5rem;
+      font-size: 18px;
+      color: #666;
     }
-
-    .cta-button {
-      margin-top: 2rem;
-      padding: 1rem 2rem;
+    .hero .button {
+      margin-top: 20px;
+      padding: 12px 24px;
       background-color: #007aff;
       color: white;
-      font-size: 1rem;
       border: none;
-      border-radius: 10px;
-      font-weight: bold;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
       text-decoration: none;
     }
-
     .features {
-      background-color: #f5f5f5;
-      width: 100%;
-      padding: 3rem 2rem;
-      text-align: center;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
     }
-
-    .features h2 {
-      font-size: 1.5rem;
+    .features h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+    .features li {
+      margin-bottom: 12px;
+      font-size: 18px;
+      padding-left: 16px;
+      position: relative;
+    }
+    .features li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
       color: #007aff;
-      margin-bottom: 1rem;
     }
-
-    .features p {
-      font-size: 1rem;
-      margin: 0.3rem 0;
-    }
-
     .screenshots {
-      width: 100%;
-      padding: 2rem;
-      background: #fff;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1.5rem;
-    }
-
-    .screenshots img {
-      max-width: 200px;
-      border-radius: 1rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    footer {
+      padding: 40px 20px;
+      background-color: #fafafa;
       text-align: center;
-      font-size: 0.9rem;
+    }
+    .screenshots h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .screenshots img {
+      width: 280px;
+      max-width: 100%;
+      margin: 10px;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 14px;
       color: #888;
-      padding: 2rem;
+      border-top: 1px solid #e0e0e0;
     }
   </style>
 </head>
 <body>
-  <header>黑妞智慧官網</header>
-  <nav>
-    <a href="#">首頁</a>
-    <a href="#">關於我們</a>
-    <a href="#">App 介紹</a>
-    <a href="#">聯絡我們</a>
-  </nav>
+  <header>
+    <h1>黑妞智慧官網</h1>
+    <nav>
+      <a href="#features">App 特色</a>
+      <a href="#screenshots">App 截圖</a>
+      <a href="#contact">聯絡方式</a>
+    </nav>
+  </header>
 
   <section class="hero">
-    <h1>物件管理好幫手</h1>
-    <p>專為倉儲與物件管理設計的 iOS App</p>
-    <a class="cta-button" href="https://apps.apple.com/" target="_blank">前往 App Store</a>
+    <h2>物件管理好幫手 App</h2>
+    <p>專為倉儲與物件管理設計的 iOS 應用程式</p>
+    <a class="button" href="#">立即下載</a>
   </section>
 
-  <section class="features">
-    <h2>App 特色</h2>
-    <p>✔ 專案建構：依照類別建立倉儲專案</p>
-    <p>✔ 物件建構：逐筆建立每個物件資訊</p>
-    <p>✔ 圖片縮圖建立：支援圖片上傳與縮圖</p>
-    <p>✔ 詳細資料卡：快速查找與修改資料</p>
-    <p>✔ 使用者登入機制、帳號管理功能</p>
-    <p>✔ 待開發功能預告：多人協作、PDF 匯出</p>
+  <section class="features" id="features">
+    <h3>App 特色功能</h3>
+    <ul>
+      <li>專案建構功能</li>
+      <li>物件建構與管理</li>
+      <li>圖片縮圖建立與儲存</li>
+      <li>詳細資料卡方便查找</li>
+      <li>支援備註、數量、位置紀錄</li>
+      <li>支援圖片快取節省雲端流量</li>
+      <li>未來將支援 PDF 匯出、圖片搜尋、多帳號協作等進階功能</li>
+    </ul>
   </section>
 
-  <section class="screenshots">
-    <!-- 圖片請替換為實際網址，這裡先用占位圖 -->
-    <img src="https://via.placeholder.com/200x400?text=iPhone+登入" alt="登入畫面" />
-    <img src="https://via.placeholder.com/200x400?text=iPhone+專案" alt="專案畫面" />
-    <img src="https://via.placeholder.com/200x400?text=iPhone+詳情" alt="詳細畫面" />
-    <img src="https://via.placeholder.com/300x400?text=iPad+主頁" alt="iPad 主畫面" />
-    <img src="https://via.placeholder.com/300x400?text=iPad+設定" alt="iPad 設定畫面" />
+  <section class="screenshots" id="screenshots">
+    <h3>App 截圖展示</h3>
+    <img src="screenshot1.jpeg" alt="登入畫面">
+    <img src="screenshot2.jpeg" alt="專案管理畫面">
+    <img src="screenshot3.jpeg" alt="物件詳情畫面">
+    <img src="screenshot4.jpeg" alt="iPad 寬畫面呈現">
   </section>
 
-  <footer>
-    © 2025 黑妞智慧品牌｜聯絡信箱：good1men1@gmail.com｜Made with ❤️ by 黑妞＆大王
+  <footer id="contact">
+    <p>聯絡信箱：good1men1@gmail.com</p>
+    <p>© 2025 黑妞智慧官網</p>
   </footer>
 </body>
 </html>
