@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>黑妞智慧官網</title>
   <style>
     body {
@@ -92,30 +92,6 @@
       border-radius: 16px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    .apk-download {
-      padding: 40px 20px;
-      text-align: center;
-      background-color: #f0f8ff;
-    }
-    .apk-download h3 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-    .apk-download a {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: #007bff;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 18px;
-      margin-top: 10px;
-    }
-    .apk-download p {
-      margin-top: 10px;
-      color: #666;
-      font-size: 14px;
-    }
     footer {
       padding: 30px 20px;
       text-align: center;
@@ -131,12 +107,12 @@
     <nav>
       <a href="#features">App 特色</a>
       <a href="#screenshots">App 截圖</a>
-      <a href="#download">Android 測試版</a>
+      <a href="#gallery">所有 App</a>
       <a href="#contact">聯絡方式</a>
     </nav>
   </header>
 
-  <!-- 物件管理好幫手 -->
+  <!-- 物件管理好幫手 App -->
   <section class="hero">
     <h2>物件管理好幫手 App</h2>
     <p>專為倉儲與物件管理設計的 iOS 應用程式</p>
@@ -169,8 +145,8 @@
     <img src="screenshot4.png" alt="iPad 寬畫面呈現">
   </section>
 
-  <!-- 懶人倉庫王 -->
-  <section class="hero" style="background-color:#fefefe;">
+  <!-- 懶人倉庫王 App -->
+  <section class="hero">
     <h2>懶人倉庫王 App</h2>
     <p>快速管理進出貨，雲端同步不漏單，記錄每筆入庫出庫，操作超直覺</p>
     <div class="app-store-badge">
@@ -197,7 +173,33 @@
     <img src="screenshot4.png" alt="SnapStockKing 主畫面">
   </section>
 
-  <!-- Android APK 下載（已隱藏） -->
+  <!-- 📱 App 展示區 -->
+  <section id="gallery" style="padding: 60px 20px; background-color: #f9f9f9; text-align: center;">
+    <h2 style="font-size: 32px; margin-bottom: 30px;">📱 所有 App 一覽</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1000px; margin: auto;">
+
+      <!-- App Card 1 -->
+      <div style="width: 280px; padding: 20px; border: 1px solid #e0e0e0; border-radius: 16px; background: white; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+        <h3>物件管理好幫手</h3>
+        <p style="color: #666; font-size: 15px;">專為倉儲與物件分類管理設計的 iOS App</p>
+        <a href="https://apps.apple.com/app/id6744175002" target="_blank">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" style="height: 48px;">
+        </a>
+      </div>
+
+      <!-- App Card 2 -->
+      <div style="width: 280px; padding: 20px; border: 1px solid #e0e0e0; border-radius: 16px; background: white; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+        <h3>懶人倉庫王</h3>
+        <p style="color: #666; font-size: 15px;">一鍵拍照建檔、入庫出庫一手包辦的超簡倉儲 App</p>
+        <a href="https://apps.apple.com/tw/app/%E6%87%B6%E4%BA%BA%E5%80%89%E5%BA%AB%E7%8E%8B/id6746676444" target="_blank">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" style="height: 48px;">
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 隱藏的 Android APK 區塊 -->
   <!--
   <section class="apk-download" id="download">
     <h3>📱 Android 測試版下載</h3>
