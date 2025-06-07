@@ -1,117 +1,147 @@
-<!-- ⚠️ 頭部與樣式保持不變，略過開頭 -->
-
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>黑妞智慧官網</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    nav a {
+      margin-left: 24px;
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      padding: 100px 20px 60px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 48px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .hero p {
+      font-size: 20px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .app-store-badge img {
+      height: 60px;
+    }
+    .app-gallery {
+      padding: 80px 20px 40px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+    .app-gallery h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+    .app-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .app-card {
+      width: 280px;
+      padding: 24px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    }
+    .app-card h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .app-card p {
+      font-size: 15px;
+      color: #666;
+      margin-bottom: 16px;
+    }
+    .brand-philosophy {
+      margin-top: 60px;
+      font-size: 16px;
+      color: #444;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+      padding: 60px 20px 30px;
+    }
+  </style>
+</head>
 <body>
   <header>
-    <h1>黑妞智慧官網</h1>
+    <h1>黑妞智慧</h1>
     <nav>
-      <a href="#gallery">所有 App</a>
-      <a href="#features">App 特色</a>
-      <a href="#screenshots">App 截圖</a>
-      <a href="#contact">聯絡方式</a>
+      <a href="#apps">App 一覽</a>
+      <a href="#contact">聯絡我們</a>
     </nav>
   </header>
 
-  <!-- ✅ 所有 App 一覽區塊（首頁最上方） -->
-  <section id="gallery" style="padding: 60px 20px; background-color: #f9f9f9; text-align: center;">
-    <h2 style="font-size: 32px; margin-bottom: 30px;">📱 所有 App 一覽</h2>
+  <section class="hero">
+    <h2>讓科技變得溫柔</h2>
+    <p>打造最直覺、最貼心的 App 使用體驗</p>
+    <div class="app-store-badge">
+      <a href="https://apps.apple.com/app/id6744175002" target="_blank">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store">
+      </a>
+    </div>
+  </section>
 
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1000px; margin: auto;">
-      <!-- App Card 1 -->
-      <div style="width: 280px; padding: 20px; border: 1px solid #e0e0e0; border-radius: 16px; background: white; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+  <section id="apps" class="app-gallery">
+    <h2>📱 所有 App 一覽</h2>
+    <div class="app-cards">
+      <div class="app-card">
         <h3>物件管理好幫手</h3>
-        <p style="color: #666; font-size: 15px;">專為倉儲與物件分類管理設計的 iOS App</p>
+        <p>專為倉儲與物件分類管理設計的 iOS App</p>
         <a href="https://apps.apple.com/app/id6744175002" target="_blank">
-          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" style="height: 48px;">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" style="height: 44px;">
         </a>
       </div>
-
-      <!-- App Card 2 -->
-      <div style="width: 280px; padding: 20px; border: 1px solid #e0e0e0; border-radius: 16px; background: white; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+      <div class="app-card">
         <h3>懶人倉庫王</h3>
-        <p style="color: #666; font-size: 15px;">一鍵拍照建檔、入庫出庫一手包辦的超簡倉儲 App</p>
+        <p>一鍵拍照建檔、入庫出庫一手包辦的超簡倉儲 App</p>
         <a href="https://apps.apple.com/tw/app/%E6%87%B6%E4%BA%BA%E5%80%89%E5%BA%AB%E7%8E%8B/id6746676444" target="_blank">
-          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" style="height: 48px;">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" style="height: 44px;">
         </a>
       </div>
     </div>
-
-    <!-- ✅ 經營理念段落放在卡片底下，結構正確 -->
-    <p style="margin-top: 40px; font-size: 16px; color: #555; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.8;">
+    <div class="brand-philosophy">
       🌟 <strong>黑妞智慧的經營理念：</strong><br>
       將複雜的流程轉化為簡單的操作，讓每一個人都能輕鬆掌握數位工具。<br>
       我們相信，真正的智慧，不是炫技，而是貼近人心的設計與溫柔的實用。
-    </p>
-  </section>
-
-  <!-- 接續原本的 Hero 與功能介紹等結構 -->
-  <section class="hero">
-    <h2>物件管理好幫手 App</h2>
-    <p>專為倉儲與物件管理設計的 iOS 應用程式</p>
-    <div class="app-store-badge">
-      <a href="https://apps.apple.com/app/id6744175002" target="_blank">
-        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
-             alt="Download on the App Store">
-      </a>
     </div>
   </section>
-
-  <section class="features" id="features">
-    <h3>App 特色功能</h3>
-    <ul>
-      <li>專案建構功能</li>
-      <li>物件建構與管理</li>
-      <li>圖片縮圖建立與儲存</li>
-      <li>詳細資料卡方便查找</li>
-      <li>支援備註、數量、位置紀錄</li>
-      <li>支援圖片快取節省雲端流量</li>
-      <li>未來將支援 PDF 匯出、圖片搜尋、多帳號協作等進階功能</li>
-    </ul>
-  </section>
-
-  <section class="screenshots" id="screenshots">
-    <h3>App 截圖展示</h3>
-    <img src="screenshot1.png" alt="登入畫面">
-    <img src="screenshot2.png" alt="專案管理畫面">
-    <img src="screenshot3.png" alt="物件詳情畫面">
-    <img src="screenshot4.png" alt="iPad 寬畫面呈現">
-  </section>
-
-  <section class="hero">
-    <h2>懶人倉庫王 App</h2>
-    <p>快速管理進出貨，雲端同步不漏單，記錄每筆入庫出庫，操作超直覺</p>
-    <div class="app-store-badge">
-      <a href="https://apps.apple.com/tw/app/%E6%87%B6%E4%BA%BA%E5%80%89%E5%BA%AB%E7%8E%8B/id6746676444" target="_blank">
-        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
-             alt="Download on the App Store">
-      </a>
-    </div>
-  </section>
-
-  <section class="features">
-    <h3>懶人倉庫王特色功能</h3>
-    <ul>
-      <li>拍照解析出貨單，自動轉成品項表</li>
-      <li>入庫、出庫操作快速簡單</li>
-      <li>雲端同步多裝置資料即時更新</li>
-      <li>詳細記錄每筆出入庫資訊</li>
-      <li>支援 iPhone / iPad / macOS 通用版本</li>
-    </ul>
-  </section>
-
-  <section class="screenshots">
-    <h3>App 畫面展示（懶人倉庫王）</h3>
-    <img src="screenshot4.png" alt="SnapStockKing 主畫面">
-  </section>
-
-  <!-- APK 區塊（已隱藏） -->
-  <!--
-  <section class="apk-download" id="download">
-    <h3>📱 Android 測試版下載</h3>
-    <p>點擊下方按鈕下載 Android 測試版 APK 安裝檔：</p>
-    <a href="app-release.apk" download>⬇️ 立即下載 APK</a>
-    <p>請先於手機開啟「允許安裝未知來源」以完成安裝。</p>
-  </section>
-  -->
 
   <footer id="contact">
     <p>聯絡信箱：good1men1@gmail.com</p>
