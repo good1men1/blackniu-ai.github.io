@@ -44,6 +44,24 @@
     .hero {
       padding: 100px 20px 60px;
       text-align: center;
+      position: relative;
+      overflow: hidden;
+      background: radial-gradient(circle at top, #000000 0%, #1a1a1a 40%, #333333 100%);
+      color: #fff;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-image: radial-gradient(white 1px, transparent 1px);
+      background-size: 40px 40px;
+      opacity: 0.08;
+      z-index: 0;
+    }
+    .hero h2, .hero p, .hero .app-store-badge {
+      position: relative;
+      z-index: 1;
     }
     .hero h2 {
       font-size: 48px;
@@ -52,7 +70,7 @@
     }
     .hero p {
       font-size: 20px;
-      color: #555;
+      color: #ccc;
       margin-bottom: 30px;
     }
     .app-store-badge img {
